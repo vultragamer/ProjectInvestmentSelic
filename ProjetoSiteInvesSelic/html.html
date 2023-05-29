@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="externo.css">
+    <link rel="stylesheet" href="externo2.css"> 
+
+
+    <title>Tesouro Direto</title>
+</head>
+<body>
+    
+    <header>
+
+        <h1 aria-level="1">Tesouro Direto contra Poupança</h1>
+        <nav>
+        
+            
+                <a href="#INICIO">INÍCIO</a>
+                <a href="#CONTEUDO">CONTEÚDO</a>
+                <a href="#SOBRE">SOBRE</a>
+            
+        
+        </nav>
+    </header>
+    <div id="INICIO">
+    <p>Falaremos nessa pagina algumas informações sobre o Tesouro Direto e seus tipos.Quando e qual é melhor para você utilizar dependendo da sua situação atual.O Tesouro Direto pode ser distribuído em 5 tipos,escolha qual deles você deseja saber e clique no ícone com o nome.Lembrando que esse site não é recomendação de investimento.</p>
+    
+    <br>
+    <div class="selecionarTesouro_e_data">
+
+        <button class="btt" onclick="alterarTesouroS()">Tesouro Selic</button>
+        <button class="btt" onclick="mudarTesouroPrefixado()">Tesouro Prefixado</button>
+        <button class="btt" onclick="mudarTesouroIpcaJUROS()" >Tesouro IPCA + Juros Semestrais</button>
+        <button class="btt" onclick="mudarTesouroIpcaDATA()">Tesouro IPCA + DATA</button>
+    
+    </div>
+   
+    
+    <p id="tesouroSelic" class="oculto"> O Tesouro Selic paga 100% da taxa SELIC. Algumas informações importantes que preciso colocar é o "Deságio" e "Ágil".O Deságio funciona da seguinte forma.Se a taxa SELIC for 13% e na hora de comprar o título estiver " Taxa Selic + 0,10".Isso significa que naquele título  há um Deságil.Então você precisará somar ,o valor da taxa Selic naquele título mais 0,10.Lembrando que isso é em porcentagem(%)
+    .Bom ,falando agora pra quem serve o Tesouro Selic .O Tesouro Selic serve para pessoas que não sabem se vão precisar de dinheiro  no curto prazo.É um dinheiro que você pode precisar a qualquer momento.Ele tem uma rentabilidade diária.Lembrando que , em alguns casos,compense pegar um título de tesouro selic com um vencimento maior ,pois com um vencímento maior ,não irá atrapalhar a curva de juros composto ,isso em comparação com um título de vencimento menor. 
+    Nesse tesouro não é possível perder dinheiro .Pode ser que ocíle um pouco  para negativo ,mas quando o título vencer ,você receberá o combinado.
+    </p>
+   
+    <p id="tesouroprefixado" class="oculto">O Tesouro prefixado possui uma taxa fixa que vai até a data de vencimento.Por exemplo: você comprou um tesouro prefixado que vai vencer daqui 3 anos com uma taxa de 14% ao ano.Lá no futuro ,você terá o juro composto atuando em cima do seu dinheiro durante 3 anos à uma taxa de 14% ao ano.Porém ,esse tipo de tesouro ,quando você antecipa ,você perde dinheiro.Na minha opinião ,é uma má opção se a inflação aumentar consideravelmente.Contudo ,considero uma boa opção se você tiver um objetivo claro na sua cabeça,como:comprar um carro ,fazer uma viagem  por exemplo daqui a 3 anos(Nesse caso específico).Também é uma boa opção se você deseja antecipar o dinheiro ,pois ,dependendo da marcação a mercado ,pode ta valendo mais ou menos dependendo do dia que você ver o título.</p>
+    
+  
+    <p id="tesouro_ipc+juros" class="oculto">O Tesouro IPCA + Juros Semestrais funciona mais para as pessoas que já estão aposentados ou já com com um valor considerado de dinheiro e não querem trabalhar mais .Por exemplo, uns 4,5 milhões de reais.Qualquer pessoa que tenha essa valor ,não gostaria de ter esse dinheiro perdendo valor pela inflação, né ? Esse tesouro  é responsável por ser corrigido pela inflação e além disso ,ele paga um cupom de juros a cada semestre.A cada 6 meses ,essa pessoa receberá uma parte desse dinheiro.Porem ,a pessoa precisa ficar ciente de quando vai cair na conta dela os Juros Semestrais(Meses).O problema é a tabela regressiva do IR.</p>    
+   
+  
+    <p  id="tesouroipca+" class="oculto">O Tesouro IPCA + é afetado pela marcação a mercado,então se você tentar antecipar ,você pode perder ou ganhar dinheiro .Contudo,ele é corrigido pela inflação e paga a taxa prometida.Um bom exemplo para usar esse tipo é se a pessoa for querer comprar uma casa daqui a alguna anos ,ou para pessoas mais jovens ,pois você estará se protegendo da inflação,ou travar o preço de algo.</p>
+   
+    </div>
+    <div id="CONTEUDO">
+    <h2>Tesouro Direto contra poupança em 2023</h2>
+        <p>Iremos considerar a taxa selic como:13,75 ao ano  e a poupança como 6,17% ao ano.</p>
+        <br>
+
+       <div id="taxaSelic">
+        <p id="textoTaxaSelic">Aqui é o quanto você teria no Tesouro Selic.</p>
+        <br>
+        <label for="numero">Digite um valor:</label>
+        <input type="text" id="numero">
+        <br>
+        <label for="tempo">Digite o tempo em anos:</label>
+        <input type="text" id="tempo">
+        <br>
+       
+            <button id="calcular" onclick="funcaoCalcular()">Calcular</button>
+            <br>
+            <p id="valor" class="ocultoValor"></p>
+       
+        <p id="montante" class="ocultoMontante"></p>
+       </div>
+       <br>
+
+       <div id="poupanca">
+        <p id="textopoupanca">Aqui é o quanto você teria na poupança.</p>
+        <br>
+        <label for="numero2">Digite um valor:</label>
+        <input type="text" id="numero2">
+        <br>
+        <label for="tempo2">Digite o tempo em anos:</label>
+        <input type="text" id="tempo2">
+        <br>
+       
+            <button id="calcular2" onclick="funcaoCalcular2()">Calcular</button>
+            <br>
+            <p id="valorPoupanca" class="ocultoValor">o</p>
+       
+            <p id="montantePoupanca" class="ocultoMontante">o</p>
+
+       </div>
+    </div>
+    
+  
+
+    <footer id="SOBRE">
+        <p>Developed by Guilherme Vasconcellos Baldesin | 2023</p>
+     
+        
+        
+            <a id="linkdln" href="https://www.linkedin.com/in/guilherme-v-baldesin-84b467237/">My Linkdln</a>
+        
+    </footer>
+    
+    <script src="infoTesouro.js"></script> 
+    <script src="infoTesouroVSpoupanca.js"></script> 
+
+</body>
+</html>

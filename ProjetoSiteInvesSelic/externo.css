@@ -1,0 +1,252 @@
+
+header ,nav{
+    background-color:#030205;
+    color: rgb(171, 216, 255);
+    
+   padding: 10px 0px 5px 0px;
+    width: 100%;
+    height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding-bottom: 40px;
+    
+
+}
+
+header h1{
+    margin: 5px;
+    margin-left: 20px;
+    padding: 0px 0px 0px 10px;
+    
+}
+
+nav {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+    padding-top: 10px;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: #d3bcf1;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+body{
+    background-color: #141233;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#INICIO{
+    background-color: #141233;
+    margin: 0;
+    padding: 0;
+    color: rgb(168, 210, 250);
+    border-color: rgb(78, 133, 182);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: 2px solid cadetblue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.selecionarTesouro_e_data{
+    display:flex;
+    
+}
+
+.selecionarTesouro_e_data button {
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+  margin-left: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+  
+}
+
+
+
+nav a:hover {
+	background-color: #141233;
+}
+.oculto{
+    display: none;
+    
+}
+
+.btt{
+    border: 0px solid #121933;
+    background-color:  #141233;
+    color: rgb(168, 210, 250);
+    padding: 15px;
+    font-size: 16px;
+    text-indent: 1em;
+}
+
+h2{
+    text-indent: 0.7em;
+}
+
+#CONTEUDO {
+    background-color:#211233;
+    margin: 0;
+    padding: 20px 0px 10px 20px;
+    color: rgb(171, 216, 255);
+    border-top: 2px solid cadetblue;
+    text-align: left;
+    
+
+}
+.btt:hover {
+	background-color:#261233;
+    border-radius: 5px;
+}
+
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    padding-left: 20px;
+    word-spacing: 0.2em;
+    text-indent: 2em;
+    margin: 0;
+    
+    
+}
+
+label{
+    padding-left: 25px;
+    word-spacing: 0.3em;
+    text-indent: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+}
+
+#taxaSelic{
+    display: inline-block;
+    border: 3px solid #8278F0;
+    padding: 15px 15px 10px 5px ;
+    margin-left: 50px
+}
+
+#poupanca{
+    display: inline-block;
+    border: 3px solid #8278F0;
+    padding: 15px 15px 10px 5px ;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#calcular{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#calcular2{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#numero{
+    margin-left: 72px;
+}
+
+.ocultoValor{
+    display:none;
+}
+.ocultoMontante{
+    display: none;
+}
+#valor{
+    
+    
+    
+    border: 2px solid purple;
+margin: 0px;
+margin-left: 25px;
+margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    text-indent: 0em;
+
+}
+#valorPoupanca{
+    border: 2px solid purple;
+margin: 0px;
+margin-left: 25px;
+margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    text-indent: 0em;
+
+}
+#montantePoupanca{
+    border: 2px solid purple;
+    margin: 0px;
+    margin-left: 25px;
+    margin-top: 10px;
+        padding: 5px 5px 5px 5px;
+        text-indent: 0em;  
+}
+#numero2{
+    margin-left: 72px;
+}
+
+
+
+#montante{
+    border: 2px solid purple;
+    margin: 0px;
+    margin-left: 25px;
+    margin-top: 10px;
+        padding: 5px 5px 5px 5px;
+        text-indent: 0em;
+}
+
+#textoTaxaSelic{
+    margin: 0;
+    padding: 0;
+}
+
+
+#textopoupanca{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color: #030614;
+    padding-bottom: 30px;
+    color:#4763e0;
+    
+}
+footer p{
+
+    font-size: 16px;
+    padding-top:10px;
+    padding-right: 40px;
+    font-weight: bold;
+    word-spacing: 0.3em;
+    margin-bottom: 10px;
+}
+
+#linkdln {
+    text-decoration: none;
+    
+    color:#4763e0;
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0px;
+    margin-left: 16px;
+    
+    
+}
+
+#SOBRE a{
+    margin-left: 52px;
+}
+
